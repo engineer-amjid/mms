@@ -3,7 +3,7 @@ from rest_framework.response import Response
 from rest_framework import status
 from rest_framework.permissions import IsAuthenticated
 from rest_framework.parsers import JSONParser, MultiPartParser, FormParser
-from .models import UserProfile
+from .models import UserProfile, UserRank
 from .profile_serializer import UserProfileSerializer
 
 class RegisterUserView(APIView):
@@ -43,3 +43,8 @@ class AllUsersView(APIView):
         users = UserProfile.objects.all()
         serializer = UserProfileSerializer(users, many=True)
         return Response(serializer.data, status=status.HTTP_200_OK)
+
+class RankView(APIView):
+
+    def get(self, request):
+        ranks = UserRank.objects.all()

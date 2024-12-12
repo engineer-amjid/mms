@@ -1,4 +1,6 @@
 from django.urls import path
+from django.contrib import admin
+
 from users.views import RegisterUserView, UserView, AllUsersView
 from rest_framework_simplejwt.views import (
     TokenObtainPairView,
@@ -6,6 +8,7 @@ from rest_framework_simplejwt.views import (
 )
 
 urlpatterns = [
+    path('admin/', admin.site.urls),
     path('', AllUsersView.as_view()),
     path('user/', UserView.as_view()),
     path('register/', RegisterUserView.as_view()),
