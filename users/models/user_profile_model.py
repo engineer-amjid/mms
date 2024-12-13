@@ -1,17 +1,25 @@
 from django.db import models
-from django.contrib.auth.models import AbstractBaseUser, PermissionsMixin, BaseUserManager
-from users.managers import UserProfileManager
+from django.contrib.auth.models import AbstractBaseUser, PermissionsMixin
+from users.managers.managers import UserProfileManager
 from django.utils.translation import gettext_lazy as _
 
-class UserRank(models.Model):
-    name = models.CharField(_('Rank Name'), max_length=50, unique=True)
+from users.models.user_rank_model import UserRank
 
-    def __str__(self):
-        return self.name
 
 class UserProfile(AbstractBaseUser, PermissionsMixin):
+    ADMIN = 'admin'
+    STAFF = 'staff'
+    MEMBER = 'member'
+
+    ROLE_CHOICES = [
+        (ADMIN, 'Admin'),
+        (STAFF, 'Staff'),
+        (MEMBER, 'Member'),
+    ]
+
     email = models.EmailField(_('Email Address'), max_length=255, unique=True)
     username = models.CharField(_('User Name'), max_length=255, unique=True)
+    role = models.CharField(_('Role'), max_length=255, choices=ROLE_CHOICES, default=MEMBER)
     phone = models.CharField(_('Phone Number'), max_length=255, blank=True, null=True)
     full_name = models.CharField(_('Full Name'), max_length=255, blank=True, null=True)
     rank = models.ForeignKey(UserRank, on_delete=models.SET_NULL, blank=True, null=True)

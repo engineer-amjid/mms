@@ -1,17 +1,16 @@
-from django.urls import path
 from django.contrib import admin
-
-from users.views import RegisterUserView, UserView, AllUsersView
-from rest_framework_simplejwt.views import (
-    TokenObtainPairView,
-    TokenRefreshView,
-)
+from django.urls import path, include
+from drf_spectacular.views import SpectacularAPIView, SpectacularSwaggerView, SpectacularRedocView
 
 urlpatterns = [
+    # Admin panel
     path('admin/', admin.site.urls),
-    path('', AllUsersView.as_view()),
-    path('user/', UserView.as_view()),
-    path('register/', RegisterUserView.as_view()),
-    path('token/', TokenObtainPairView.as_view(), name='token_obtain_pair'),
-    path('token/refresh/', TokenRefreshView.as_view(), name='token_refresh'),
+
+    # App URLs
+    path('users/', include(('users.urls', 'users'), namespace='users')),
+
+    # Swagger/OpenAPI URLs
+    path('schema/', SpectacularAPIView.as_view(), name='schema'),  # Generates the schema
+    path('schema/swagger-ui/', SpectacularSwaggerView.as_view(url_name='schema'), name='swagger-ui'),  # Swagger UI
+    path('schema/redoc/', SpectacularRedocView.as_view(url_name='schema'), name='redoc'),  # Redoc UI
 ]

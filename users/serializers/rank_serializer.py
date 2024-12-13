@@ -1,4 +1,4 @@
-from users.models import UserRank
+from users.models.user_rank_model import UserRank
 
 
 class UserRankSerializer:

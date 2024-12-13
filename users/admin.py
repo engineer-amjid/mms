@@ -1,7 +1,9 @@
 from django.contrib import admin
 from django.contrib.auth.admin import UserAdmin
 
-from .models import UserRank, UserProfile
+from .models import UserProfile
+from .models.user_rank_model import UserRank
+
 
 @admin.register(UserRank)
 class RankAdmin(admin.ModelAdmin):
