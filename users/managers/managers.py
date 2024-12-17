@@ -3,12 +3,12 @@ from django.contrib.auth.base_user import BaseUserManager
 class UserProfileManager(BaseUserManager):
     """Manager for user profiles"""
 
-    def create_user(self, email, username, password=None):
+    def create_user(self, email, username, password=None, **extra_fields):
         if not email:
             raise ValueError('Users must have an email')
 
         email = self.normalize_email(email)
-        user = self.model(email=email, username=username)
+        user = self.model(email=email, username=username, **extra_fields)
 
         user.set_password(password)
         user.save(using=self._db)

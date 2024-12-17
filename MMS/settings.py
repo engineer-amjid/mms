@@ -37,6 +37,13 @@ REST_FRAMEWORK = {
     'DEFAULT_PERMISSION_CLASSES': [
         'rest_framework.permissions.IsAuthenticated',
     ],
+    'EXCEPTION_HANDLER': 'users.utils.custom_exception_handler',
+}
+SIMPLE_JWT = {
+    'ACCESS_TOKEN_LIFETIME': timedelta(days=1),  # Set access token expiry time
+    'REFRESH_TOKEN_LIFETIME': timedelta(days=7),     # Set refresh token expiry time
+    'ROTATE_REFRESH_TOKENS': True,                  # Optional: Rotate refresh tokens on refresh
+    'BLACKLIST_AFTER_ROTATION': True,               # Optional: Blacklist rotated tokens
 }
 
 SPECTACULAR_SETTINGS = {

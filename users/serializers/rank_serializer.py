@@ -1,10 +1,11 @@
+from rest_framework import serializers
 from users.models.user_rank_model import UserRank
 
 
-class UserRankSerializer:
+class UserRankSerializer(serializers.ModelSerializer):
     class Meta:
         model = UserRank
-        fields = '__all__'
+        fields = ['id', 'name']
     def create(self, validated_data):
         rank = UserRank.objects.create(**validated_data)
         return rank

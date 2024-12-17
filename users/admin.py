@@ -14,7 +14,7 @@ class RankAdmin(admin.ModelAdmin):
 @admin.register(UserProfile)
 class UserProfileAdmin(UserAdmin):
     model = UserProfile
-    list_display = ['email', 'username', 'full_name', 'rank', 'is_staff', 'is_active']
+    list_display = ['id', 'email', 'username', 'password', 'role', 'phone', 'full_name', 'rank']
     search_fields = ['email', 'username', 'full_name']
     ordering = ['email']
 
@@ -27,7 +27,7 @@ class UserProfileAdmin(UserAdmin):
     add_fieldsets = (
         (None, {
             'classes': ('wide',),
-            'fields': ('username', 'email', 'password1', 'password2', 'is_staff', 'is_active'),
+            'fields': ('username', 'email', 'phone', 'password1', 'password2', 'is_staff', 'is_active', 'role'),
         }),
     )
 

@@ -4,28 +4,22 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="649e3691-60e8-4960-9af0-051b045270a1" name="Changes" comment="Add UserRank model and enhance UserProfile fields&#10;&#10;Introduce the UserRank model with admin registration and serializer support. Update UserProfile with new fields (phone, full_name) and remove the avatar field. Enhance admin, views, serializers, and URLs to support the changes, including a new RankView and admin panel access.">
-      <change afterPath="$PROJECT_DIR$/users/managers/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/users/models/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/users/models/user_profile_model.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/users/models/user_rank_model.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/users/serializers/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/users/urls.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/users/utils/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/users/utils/custom_response.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/users/views/rank_view.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/users/views/user_view.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/MMS.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/MMS.iml" afterDir="false" />
+    <list default="true" id="649e3691-60e8-4960-9af0-051b045270a1" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/users/utils/custom_permissions.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/users/utils/exception_handler.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MMS/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/MMS/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MMS/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/MMS/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/users/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/users/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/users/managers.py" beforeDir="false" afterPath="$PROJECT_DIR$/users/managers/managers.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/users/models.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/users/profile_serializer.py" beforeDir="false" afterPath="$PROJECT_DIR$/users/serializers/profile_serializer.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/users/rank_serializer.py" beforeDir="false" afterPath="$PROJECT_DIR$/users/serializers/rank_serializer.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/users/views.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/users/managers/managers.py" beforeDir="false" afterPath="$PROJECT_DIR$/users/managers/managers.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/users/models/user_profile_model.py" beforeDir="false" afterPath="$PROJECT_DIR$/users/models/user_profile_model.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/users/serializers/profile_serializer.py" beforeDir="false" afterPath="$PROJECT_DIR$/users/serializers/profile_serializer.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/users/serializers/rank_serializer.py" beforeDir="false" afterPath="$PROJECT_DIR$/users/serializers/rank_serializer.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/users/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/users/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/users/utils/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/users/utils/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/users/utils/custom_response.py" beforeDir="false" afterPath="$PROJECT_DIR$/users/utils/custom_response.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/users/views/rank_view.py" beforeDir="false" afterPath="$PROJECT_DIR$/users/views/rank_view.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/users/views/user_view.py" beforeDir="false" afterPath="$PROJECT_DIR$/users/views/user_view.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,6 +36,18 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "engineer-amjid"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/engineer-amjid/mms.git",
+    "accountId": "b3c905cf-4b13-4073-90af-eb325b769a61"
+  }
+}]]></component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 1
 }</component>
@@ -53,22 +59,22 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Django Server.MMS.executor&quot;: &quot;Run&quot;,
-    &quot;HTTP Request.generated-requests | #1.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.OpenDjangoStructureViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Django Server.MMS.executor": "Run",
+    "HTTP Request.generated-requests | #1.executor": "Run",
+    "RunOnceActivity.OpenDjangoStructureViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "main",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/users/utils" />
@@ -128,7 +134,7 @@
       <option name="presentableId" value="Default" />
       <updated>1733989015128</updated>
       <workItem from="1733989016133" duration="12041000" />
-      <workItem from="1734071413784" duration="3687000" />
+      <workItem from="1734071413784" duration="17695000" />
     </task>
     <task id="LOCAL-00001" summary="Initialize Django project with custom user model&#10;&#10;Set up a new Django project (MMS) using SQLite as the database. Added `UserProfile` as the custom user model, JWT authentication, and user management APIs. Included necessary files for initial project configuration and structure.">
       <option name="closed" value="true" />
@@ -146,7 +152,15 @@
       <option name="project" value="LOCAL" />
       <updated>1734001735163</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Refactor user models, views, and API structure&#10;&#10;Reorganized the user module by splitting models, views, and serializers into dedicated files for better maintainability. Added `role` field to `UserProfile` and redesigned views using `custom_response`. Integrated Swagger for API documentation and updated URL routing.">
+      <option name="closed" value="true" />
+      <created>1734082303901</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1734082303901</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -155,6 +169,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Initialize Django project with custom user model&#10;&#10;Set up a new Django project (MMS) using SQLite as the database. Added `UserProfile` as the custom user model, JWT authentication, and user management APIs. Included necessary files for initial project configuration and structure." />
     <MESSAGE value="Add UserRank model and enhance UserProfile fields&#10;&#10;Introduce the UserRank model with admin registration and serializer support. Update UserProfile with new fields (phone, full_name) and remove the avatar field. Enhance admin, views, serializers, and URLs to support the changes, including a new RankView and admin panel access." />
-    <option name="LAST_COMMIT_MESSAGE" value="Add UserRank model and enhance UserProfile fields&#10;&#10;Introduce the UserRank model with admin registration and serializer support. Update UserProfile with new fields (phone, full_name) and remove the avatar field. Enhance admin, views, serializers, and URLs to support the changes, including a new RankView and admin panel access." />
+    <MESSAGE value="Refactor user models, views, and API structure&#10;&#10;Reorganized the user module by splitting models, views, and serializers into dedicated files for better maintainability. Added `role` field to `UserProfile` and redesigned views using `custom_response`. Integrated Swagger for API documentation and updated URL routing." />
+    <option name="LAST_COMMIT_MESSAGE" value="" />
   </component>
 </project>

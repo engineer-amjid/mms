@@ -1,5 +1,4 @@
 from rest_framework.response import Response
-from rest_framework import status
 
 def custom_response(message, status_code, data=None):
     response_data = {
