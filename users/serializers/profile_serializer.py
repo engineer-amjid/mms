@@ -3,16 +3,6 @@ from users.models import UserProfile
 from users.models.user_rank_model import UserRank
 from users.serializers.rank_serializer import UserRankSerializer
 
-
-# Serializer for retrieving UserProfile data
-# class UserProfileSerializer(serializers.ModelSerializer):
-#     rank = UserRankSerializer(read_only=True)  # Display rank as a nested object
-#
-#     class Meta:
-#         model = UserProfile
-#         fields = ['id', 'email', 'username', 'role', 'phone', 'full_name', 'rank', 'is_approved']
-
-
 # Serializer for creating a new UserProfile
 class UserProfileSerializer(serializers.ModelSerializer):
     rank_id = serializers.PrimaryKeyRelatedField(

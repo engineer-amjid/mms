@@ -5,14 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="649e3691-60e8-4960-9af0-051b045270a1" name="Changes" comment="Refactor user management logic and enhance API functionality&#10;&#10;Reorganized user-related views, serializers, and permissions for improved clarity and scalability. Introduced JWT-based login, user role-based access control, and custom exception handling. Added token generation for user registration and refined serializer structure for profile operations.">
-      <change afterPath="$PROJECT_DIR$/users/serializers/approve_member_serializer.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/users/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/users/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/users/models/user_profile_model.py" beforeDir="false" afterPath="$PROJECT_DIR$/users/models/user_profile_model.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/users/serializers/profile_serializer.py" beforeDir="false" afterPath="$PROJECT_DIR$/users/serializers/profile_serializer.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/users/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/users/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/users/views/user_view.py" beforeDir="false" afterPath="$PROJECT_DIR$/users/views/user_view.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -128,7 +121,7 @@
       <updated>1733989015128</updated>
       <workItem from="1733989016133" duration="12041000" />
       <workItem from="1734071413784" duration="17695000" />
-      <workItem from="1734415886039" duration="8203000" />
+      <workItem from="1734415886039" duration="8941000" />
     </task>
     <task id="LOCAL-00001" summary="Initialize Django project with custom user model&#10;&#10;Set up a new Django project (MMS) using SQLite as the database. Added `UserProfile` as the custom user model, JWT authentication, and user management APIs. Included necessary files for initial project configuration and structure.">
       <option name="closed" value="true" />
@@ -162,7 +155,15 @@
       <option name="project" value="LOCAL" />
       <updated>1734415959991</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Refactor user management logic and enhance API functionality&#10;&#10;Reorganized user-related views, serializers, and permissions for improved clarity and scalability. Introduced JWT-based login, user role-based access control, and custom exception handling. Added token generation for user registration and refined serializer structure for profile operations.">
+      <option name="closed" value="true" />
+      <created>1734498653664</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1734498653664</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
