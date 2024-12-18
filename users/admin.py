@@ -14,14 +14,14 @@ class RankAdmin(admin.ModelAdmin):
 @admin.register(UserProfile)
 class UserProfileAdmin(UserAdmin):
     model = UserProfile
-    list_display = ['id', 'email', 'username', 'password', 'role', 'phone', 'full_name', 'rank']
+    list_display = ['id', 'email', 'username', 'password', 'role', 'phone', 'full_name', 'rank', 'is_approved']
     search_fields = ['email', 'username', 'full_name']
     ordering = ['email']
 
     fieldsets = (
         (None, {'fields': ('username', 'email', 'password')}),
         ('Personal Info', {'fields': ('full_name', 'phone', 'rank')}),
-        ('Permissions', {'fields': ('is_active', 'is_staff', 'is_superuser', 'groups', 'user_permissions')}),
+        ('Permissions', {'fields': ('is_active', 'is_staff', 'is_superuser', 'groups', 'user_permissions', 'is_approved')}),
         ('Important Dates', {'fields': ('last_login',)}),
     )
     add_fieldsets = (

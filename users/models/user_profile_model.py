@@ -25,7 +25,7 @@ class UserProfile(AbstractBaseUser, PermissionsMixin):
     rank = models.ForeignKey(UserRank, on_delete=models.SET_NULL, blank=True, null=True)
     is_active = models.BooleanField(_('Is Active'), default=True)
     is_staff = models.BooleanField(_('Is Staff'), default=False)
-
+    is_approved = models.BooleanField(_('Is Approved'), default=False)
 
     objects = UserProfileManager()
 
