@@ -4,13 +4,21 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="649e3691-60e8-4960-9af0-051b045270a1" name="Changes" comment="Refactor user management logic and enhance API functionality&#10;&#10;Reorganized user-related views, serializers, and permissions for improved clarity and scalability. Introduced JWT-based login, user role-based access control, and custom exception handling. Added token generation for user registration and refined serializer structure for profile operations.">
-      <change beforePath="$PROJECT_DIR$/users/serializers/profile_serializer.py" beforeDir="false" afterPath="$PROJECT_DIR$/users/serializers/profile_serializer.py" afterDir="false" />
+    <list default="true" id="649e3691-60e8-4960-9af0-051b045270a1" name="Changes" comment="Remove unused comments from ProfileSerializer.&#10;&#10;Redundant comments in `profile_serializer.py` were removed to improve code readability and reduce clutter. This cleanup ensures the file remains concise and easier to maintain. Other changes are metadata updates in the workspace configuration file.">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MMS/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/MMS/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MMS/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/MMS/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/users/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/users/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/users/views/user_view.py" beforeDir="false" afterPath="$PROJECT_DIR$/users/views/user_view.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DjangoConsoleOptions" custom-start-script="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)">
+    <option name="myCustomStartScript" value="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -58,6 +66,7 @@
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
@@ -121,7 +130,9 @@
       <updated>1733989015128</updated>
       <workItem from="1733989016133" duration="12041000" />
       <workItem from="1734071413784" duration="17695000" />
-      <workItem from="1734415886039" duration="8941000" />
+      <workItem from="1734415886039" duration="14046000" />
+      <workItem from="1734581060793" duration="86000" />
+      <workItem from="1734581184586" duration="2215000" />
     </task>
     <task id="LOCAL-00001" summary="Initialize Django project with custom user model&#10;&#10;Set up a new Django project (MMS) using SQLite as the database. Added `UserProfile` as the custom user model, JWT authentication, and user management APIs. Included necessary files for initial project configuration and structure.">
       <option name="closed" value="true" />
@@ -163,7 +174,15 @@
       <option name="project" value="LOCAL" />
       <updated>1734498653664</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Remove unused comments from ProfileSerializer.&#10;&#10;Redundant comments in `profile_serializer.py` were removed to improve code readability and reduce clutter. This cleanup ensures the file remains concise and easier to maintain. Other changes are metadata updates in the workspace configuration file.">
+      <option name="closed" value="true" />
+      <created>1734500336118</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1734500336118</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -185,6 +204,7 @@
     <MESSAGE value="Add UserRank model and enhance UserProfile fields&#10;&#10;Introduce the UserRank model with admin registration and serializer support. Update UserProfile with new fields (phone, full_name) and remove the avatar field. Enhance admin, views, serializers, and URLs to support the changes, including a new RankView and admin panel access." />
     <MESSAGE value="Refactor user models, views, and API structure&#10;&#10;Reorganized the user module by splitting models, views, and serializers into dedicated files for better maintainability. Added `role` field to `UserProfile` and redesigned views using `custom_response`. Integrated Swagger for API documentation and updated URL routing." />
     <MESSAGE value="Refactor user management logic and enhance API functionality&#10;&#10;Reorganized user-related views, serializers, and permissions for improved clarity and scalability. Introduced JWT-based login, user role-based access control, and custom exception handling. Added token generation for user registration and refined serializer structure for profile operations." />
-    <option name="LAST_COMMIT_MESSAGE" value="Refactor user management logic and enhance API functionality&#10;&#10;Reorganized user-related views, serializers, and permissions for improved clarity and scalability. Introduced JWT-based login, user role-based access control, and custom exception handling. Added token generation for user registration and refined serializer structure for profile operations." />
+    <MESSAGE value="Remove unused comments from ProfileSerializer.&#10;&#10;Redundant comments in `profile_serializer.py` were removed to improve code readability and reduce clutter. This cleanup ensures the file remains concise and easier to maintain. Other changes are metadata updates in the workspace configuration file." />
+    <option name="LAST_COMMIT_MESSAGE" value="Remove unused comments from ProfileSerializer.&#10;&#10;Redundant comments in `profile_serializer.py` were removed to improve code readability and reduce clutter. This cleanup ensures the file remains concise and easier to maintain. Other changes are metadata updates in the workspace configuration file." />
   </component>
 </project>

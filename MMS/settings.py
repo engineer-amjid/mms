@@ -79,6 +79,7 @@ EXTERNAL_APPS = [
     'rest_framework',
     'rest_framework.authtoken',
     'drf_spectacular',
+    'corsheaders',
     'users'
 ]
 INSTALLED_APPS += EXTERNAL_APPS
@@ -91,8 +92,12 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'corsheaders.middleware.CorsMiddleware',
 ]
-
+CORS_ALLOWED_ORIGINS = [
+    'http://localhost:57695',  # Replace with your Flutter app's debug port
+    'http://127.0.0.1:1234',
+]
 ROOT_URLCONF = 'MMS.urls'
 
 TEMPLATES = [

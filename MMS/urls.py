@@ -7,7 +7,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
 
     # App URLs
-    path('users/', include(('users.urls', 'users'), namespace='users')),
+    path('', include(('users.urls', 'users'), namespace='users')),
 
     # Swagger/OpenAPI URLs
     path('schema/', SpectacularAPIView.as_view(), name='schema'),  # Generates the schema
